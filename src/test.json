@@ -1,0 +1,222 @@
+
+
+{
+    "participants":[
+     {
+        "id": 1,
+        "name": "Alice",
+        "phoneNumber":"604 111 2222"
+    },
+     {
+        "id": 2,
+        "name": "Bob",
+        "phoneNumber":"604 543 2105"
+     },
+     {
+        "id": 3,
+        "name": "Kevin",
+        "phoneNumber":"604 222 7805"
+    },
+    {
+        "id": 4,
+        "name": "Alex",
+        "phoneNumber":"604 725 7742"
+     }
+     
+   ],
+   "messages":[
+    {
+        "id":1,
+        "threadId":1,
+        "participantId":1,
+        "text":"Hi Bob",
+        "timestamp":1234561236
+       },
+       {
+        "id":2,
+        "threadId":1,
+        "participantId":2,
+        "text":"Hi Alice",
+        "timestamp":1234561236
+       },
+       {
+        "id":3,
+        "threadId":1,
+        "participantId":1,
+        "text":"Did you take out a trash today?",
+        "timestamp":1234561236
+       },
+       {
+        "id":4,
+        "threadId":1,
+        "participantId":2,
+        "text":"No ,I did not.",
+        "timestamp":44112542452
+       },
+       {
+        "id":5,
+        "threadId":1,
+        "participantId":1,
+        "text":"Okay.I 'll do it",
+        "timestamp":1234561236
+       },
+       {
+        "id":6,
+        "threadId":2,
+        "participantId":3,
+        "text":"Hi Alex",
+        "timestamp":1234561236
+       },
+       {
+        "id":7,
+        "threadId":2,
+        "participantId":4,
+        "text":"Hi Kevin",
+        "timestamp":1234561236
+       },
+       {
+        "id":8,
+        "threadId":2,
+        "participantId":3,
+        "text":"How are you?",
+        "timestamp":1234561236
+       },
+       {
+        "id":9,
+        "threadId":2,
+        "participantId":4,
+        "text":"Thanks, fine",
+        "timestamp":1234561236
+       },
+       {
+        "id":10,
+        "threadId":3,
+        "participantId":1,
+        "text":"Hi Alex",
+        "timestamp":1234561236
+       },
+       {
+        "id":11,
+        "threadId":3,
+        "participantId":4,
+        "text":"Hi Alice",
+        "timestamp":1234561236
+       },
+       {
+        "id":12,
+        "threadId":3,
+        "participantId":1,
+        "text":"Are you at home?",
+        "timestamp":1234561236
+       },
+       {
+        "id":13,
+        "threadId":3,
+        "participantId":4,
+        "text":"No, I am at work!",
+        "timestamp":1234561236
+       },
+       {
+        "id":14,
+        "threadId":4,
+        "participantId":1,
+        "text":"Hi Kevin",
+        "timestamp":1234561236
+       },
+       {
+        "id":15,
+        "threadId":4,
+        "participantId":3,
+        "text":"Hi Alice",
+        "timestamp":1234561236
+       },
+       {
+        "id":16,
+        "threadId":4,
+        "participantId":1,
+        "text":"Do you feel cold?",
+        "timestamp":1234561236
+       },
+       {
+        "id":17,
+        "threadId":4,
+        "participantId":3,
+        "text":"No, I am okay!",
+        "timestamp":1234561236
+       }
+   ],
+   "threads":[
+       
+       {
+        "id":1,
+        "messageIds":[1, 2, 3,4,5],
+        "participants":{
+            "1":0,
+            "2":0
+            
+            
+
+        },
+        "isArchived":false
+       }
+       ,
+       {
+        "id":2,
+        "messageIds":[6,7,8,9],
+        "participants":{
+            "3":0,
+            "4":0
+            
+            
+
+        }
+        ,
+        "isArchived":false
+       }
+       ,
+       {
+        "id":3,
+        "messageIds":[10,11,12,13],
+        "participants":{
+            "1":0,
+            "4":0
+            
+            
+
+        }
+        ,
+        "isArchived":false
+       },
+       
+       {
+        "id":4,
+        "messageIds":[14,15,16,17],
+        "participants":{
+            "1":0,
+            "3":0
+            
+            
+
+        }
+        ,
+        "isArchived":false
+       }
+       ,
+       
+       {
+        "id":5,
+        "messageIds":[],
+        "participants":{
+            "2":0,
+            "3":0
+            
+            
+
+        }
+        ,
+        "isArchived":false
+       }
+
+   ]
+   
+}

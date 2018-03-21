@@ -1,0 +1,15 @@
+
+<div>
+    <div class="thread-count">
+       
+        <span class="unread-messages-counter" [ngClass]="{unread:(unreadMessagesCounter$ | async )>0 }">
+            Unread messages: {{unreadMessagesCounter$ | async }}
+        </span>
+    </div>
+    <thread-list [threads]="threadVm$ | async" 
+    [currentSelectedThreadId]="currentSelectedThreadId$ |async">
+   
+
+</thread-list>
+
+</div>

@@ -1,0 +1,10 @@
+<div>
+  <span>
+      Select User:
+      <select (change)="onSelectUser($event.target.value)">
+          <option></option>
+          <option *ngFor="let participant of participants$| async" value={{participant.id}}>{{participant.name}}</option>
+      </select>
+  </span>
+</div>
+

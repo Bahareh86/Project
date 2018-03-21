@@ -1,0 +1,23 @@
+<div class="container">
+<ul class="thread-list" >
+        
+        <h4 >Conversion List</h4>
+        <input class="text" [(ngModel)]="searchText" placeholder="Search" >
+        <li class="thread-list-item" *ngFor="let thread of threads |searchFilter : searchText" (click)="selectThread(thread.id)" 
+            [hidden]="thread.isArchived && !searchText" [ngClass]="{selected:thread.id==currentSelectedThreadId}" >
+      
+        <button [ngClass]="{ 'unArchive-button': !thread.isArchived, 'archive-button': thread.isArchived  }"
+                [disabled]="thread.isArchived" (click)="onArchive(thread.id)" >Archive</button>
+        <h5  class="thread-name" [ngClass]="{unread:!thread.read}" >{{thread.user}}</h5>
+        
+        </li>
+        
+           
+        <user-addition class="user-addition" ></user-addition>
+        
+        
+    </ul>
+   
+</div>
+
+
